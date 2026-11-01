@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="850" viewBox="0 0 1600 850">
+<rect width="100%" height="100%" fill="white"/>
+<text x="800" y="40" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="middle" fill="#152331">Observer subscriptions and the integration link</text>
+<rect x="35" y="85" width="330" height="174" fill="#eaf2fa" stroke="#456079" stroke-width="2"/>
+<text x="200.0" y="117" font-family="Arial,sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#152331">«interface»</text>
+<text x="200.0" y="146" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">Subject&lt;E&gt;</text>
+<path d="M35 160 H365" stroke="#456079" stroke-width="2"/>
+<text x="200.0" y="189" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#152331">subscribe(type, observer)</text>
+<text x="200.0" y="218" font-family="Arial,sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#152331">unsubscribe(type, observer)</text>
+<text x="200.0" y="247" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">publish(event)</text>
+<rect x="530" y="85" width="360" height="116" fill="#eaf2fa" stroke="#456079" stroke-width="2"/>
+<text x="710.0" y="117" font-family="Arial,sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#152331">«interface»</text>
+<text x="710.0" y="146" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">Observer&lt;E&gt;</text>
+<path d="M530 160 H890" stroke="#456079" stroke-width="2"/>
+<text x="710.0" y="189" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">onEvent(event)</text>
+<rect x="35" y="320" width="330" height="135" fill="#f7f8fa" stroke="#456079" stroke-width="2"/>
+<text x="200.0" y="352" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">EventSubject&lt;E&gt;</text>
+<path d="M35 366 H365" stroke="#456079" stroke-width="2"/>
+<text x="200.0" y="395" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">typed CopyOnWrite sets</text>
+<text x="200.0" y="424" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">publish(event)</text>
+<path d="M200 320 L200 259" fill="none" stroke="#456079" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="200,259 209.0,276.0 191.0,276.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<path d="M365 375 L450 375 L450 140 L530 140" fill="none" stroke="#456079" stroke-width="2.5"/>
+<polyline points="513.0,149.0 530,140 513.0,131.0" fill="none" stroke="#456079" stroke-width="2.5"/>
+<text x="445" y="290" font-family="Arial,sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#152331">notifies</text>
+<rect x="35" y="590" width="330" height="116" fill="#f7f8fa" stroke="#456079" stroke-width="2"/>
+<text x="200.0" y="622" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">SyntheticSource</text>
+<path d="M35 636 H365" stroke="#456079" stroke-width="2"/>
+<text x="200.0" y="665" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">emit(sequence)</text>
+<text x="200.0" y="694" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#152331">ECG / PPG / EEG instances</text>
+<path d="M200 590 L200 455" fill="none" stroke="#456079" stroke-width="2.5"/>
+<polygon points="200,455 209.0,472.0 191.0,472.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<rect x="530" y="320" width="300" height="116" fill="#f7f8fa" stroke="#456079" stroke-width="2"/>
+<text x="680.0" y="352" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">RealTimeMonitor</text>
+<path d="M530 366 H830" stroke="#456079" stroke-width="2"/>
+<text x="680.0" y="395" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">onEvent(event)</text>
+<text x="680.0" y="424" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">updates atomic data</text>
+<rect x="880" y="320" width="300" height="116" fill="#f7f8fa" stroke="#456079" stroke-width="2"/>
+<text x="1030.0" y="352" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">AdaptiveFilter</text>
+<path d="M880 366 H1180" stroke="#456079" stroke-width="2"/>
+<text x="1030.0" y="395" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">onEvent(event)</text>
+<text x="1030.0" y="424" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">window 16 or 4</text>
+<rect x="1230" y="320" width="330" height="116" fill="#f7f8fa" stroke="#456079" stroke-width="2"/>
+<text x="1395.0" y="352" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">LatencyTracker</text>
+<path d="M1230 366 H1560" stroke="#456079" stroke-width="2"/>
+<text x="1395.0" y="395" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">onEvent(event)</text>
+<text x="1395.0" y="424" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">count and latency</text>
+<path d="M680 320 L680 270 L710 270 L710 201" fill="none" stroke="#456079" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="710,201 719.0,218.0 701.0,218.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<path d="M1030 320 L1030 270 L710 270 L710 201" fill="none" stroke="#456079" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="710,201 719.0,218.0 701.0,218.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<path d="M1395 320 L1395 270 L710 270 L710 201" fill="none" stroke="#456079" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="710,201 719.0,218.0 701.0,218.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<rect x="530" y="590" width="300" height="116" fill="#f7f8fa" stroke="#456079" stroke-width="2"/>
+<text x="680.0" y="622" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">AnomalyDetector</text>
+<path d="M530 636 H830" stroke="#456079" stroke-width="2"/>
+<text x="680.0" y="665" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">onEvent(event)</text>
+<text x="680.0" y="694" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">publishes ALARM</text>
+<rect x="880" y="590" width="300" height="116" fill="#f7f8fa" stroke="#456079" stroke-width="2"/>
+<text x="1030.0" y="622" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">PatientAggregator</text>
+<path d="M880 636 H1180" stroke="#456079" stroke-width="2"/>
+<text x="1030.0" y="665" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">onEvent(event)</text>
+<text x="1030.0" y="694" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">publishes AGGREGATE</text>
+<rect x="1230" y="590" width="330" height="116" fill="#f7f8fa" stroke="#456079" stroke-width="2"/>
+<text x="1395.0" y="622" font-family="Arial,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#152331">InspectionListener</text>
+<path d="M1230 636 H1560" stroke="#456079" stroke-width="2"/>
+<text x="1395.0" y="665" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">onEvent(ALARM)</text>
+<text x="1395.0" y="694" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">patient.accept(visitor)</text>
+<path d="M680 590 L680 525 L485 525 L485 220 L710 220 L710 201" fill="none" stroke="#456079" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="710,201 719.0,218.0 701.0,218.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<path d="M1030 590 L1030 525 L485 525 L485 220 L710 220 L710 201" fill="none" stroke="#456079" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="710,201 719.0,218.0 701.0,218.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<path d="M1395 590 L1395 525 L485 525 L485 220 L710 220 L710 201" fill="none" stroke="#456079" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="710,201 719.0,218.0 701.0,218.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<path d="M530 645 L400 645 L400 425 L365 425" fill="none" stroke="#456079" stroke-width="2.5"/>
+<polygon points="365,425 382.0,416.0 382.0,434.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<path d="M880 670 L415 670 L415 445 L365 445" fill="none" stroke="#456079" stroke-width="2.5"/>
+<polygon points="365,445 382.0,436.0 382.0,454.0" fill="white" stroke="#456079" stroke-width="2.5"/>
+<path d="M680 706 L680 740 L1395 740 L1395 706" fill="none" stroke="#456079" stroke-width="2.5"/>
+<polyline points="1404.0,723.0 1395,706 1386.0,723.0" fill="none" stroke="#456079" stroke-width="2.5"/>
+<text x="1040" y="732" font-family="Arial,sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#152331">ALARM</text>
+<text x="800" y="790" font-family="Arial,sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#152331">InspectionListener publishes REPORT after a visitor inspects the selected Patient subtree.</text>
+<text x="800" y="828" font-family="Arial,sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#152331">EventLog observes ALARM, AGGREGATE and REPORT; Main creates the complete object graph.</text>
+</svg>

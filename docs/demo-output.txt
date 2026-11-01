@@ -1,0 +1,10 @@
+Biomedical streams: synthetic ECG / PPG / EEG
+Producers=3 samples=6000 throughput=220148 samples/s average=0.0100 ms max=4.4638 ms
+Alarms=468 related-patient reports=468 aggregates=240 listener errors=0
+Filter window starts at 16; final P1/ECG window=4
+Latest patient inspection: SignalEvent[type=REPORT, patientId=P1, channel=inspection-latency, value=2.000708, backlog=0, createdNanos=24297420087625, count=1]
+Tree latency sum: 4.0013749999999995
+Mean signal quality: 89.78705499779309
+Tree alarm total=468 leaves=10
+Low quality leaves: [P1/ECG, P2/ECG]
+{"kind":"Hospital","id":"Teaching hospital","children":[{"kind":"Ward","id":"Signals ward","children":[{"kind":"Patient","id":"P1","children":[{"kind":"ECG","id":"P1/ECG","quality":81.56001785215761,"alarms":81,"latencyMs":1.25E-4},{"kind":"PPG","id":"P1/PPG","quality":93.97060145699857,"alarms":81,"latencyMs":5.42E-4},{"kind":"EEG","id":"P1/EEG","quality":92.15558140738665,"alarms":74,"latencyMs":4.1E-5},{"kind":"Monitor","id":"P1/Monitor","quality":90.0,"alarms":0,"latencyMs":1.0},{"kind":"OxygenSensor","id":"P1/Oxygen","quality":90.0,"alarms":0,"latencyMs":1.0}]},{"kind":"Patient","id":"P2","children":[{"kind":"ECG","id":"P2/ECG","quality":81.01864540002472,"alarms":79,"latencyMs":1.25E-4},{"kind":"PPG","id":"P2/PPG","quality":99.80036066561185,"alarms":74,"latencyMs":5.0E-4},{"kind":"EEG","id":"P2/EEG","quality":89.36534319575162,"alarms":79,"latencyMs":4.2E-5},{"kind":"Monitor","id":"P2/Monitor","quality":90.0,"alarms":0,"latencyMs":1.0},{"kind":"OxygenSensor","id":"P2/Oxygen","quality":90.0,"alarms":0,"latencyMs":1.0}]}]}]}

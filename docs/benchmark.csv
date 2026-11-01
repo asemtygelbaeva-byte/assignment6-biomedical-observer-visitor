@@ -1,0 +1,4 @@
+producers,samples,samples_per_second,average_latency_ms,max_latency_ms
+1,30000,975551.60,0.000818,0.076500
+2,30000,1163446.42,0.000993,1.603792
+4,30000,1037505.84,0.003397,2.301291

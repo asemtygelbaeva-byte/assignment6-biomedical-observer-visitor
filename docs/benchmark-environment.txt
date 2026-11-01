@@ -1,0 +1,10 @@
+Architecture: arm64
+OS: Darwin 23.5.0
+openjdk version "21.0.1" 2023-10-17
+OpenJDK Runtime Environment (build 21.0.1+12-29)
+OpenJDK 64-Bit Server VM (build 21.0.1+12-29, mixed mode, sharing)
+
+Warmup: 3000 samples for each thread count.
+Measured: 30000 samples per run. Same sequence/channel mix, 1 / 2 / 4 producers.
+Latency: sample creation to final SAMPLE listener callback.
+Throughput: samples / elapsed time including executor startup and graceful shutdown.
