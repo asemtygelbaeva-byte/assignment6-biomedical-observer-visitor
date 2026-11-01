@@ -70,13 +70,14 @@ public final class Main {
         var patients = new LinkedHashMap<String, Patient>();
         for (String id : List.of("P1", "P2")) {
             var children = new ArrayList<Element>();
-            for (String channel : List.of("ECG", "PPG", "EEG", "Monitor")) {
+            for (String channel : List.of("ECG", "PPG", "EEG", "Monitor", "Oxygen")) {
                 states.put(id + "/" + channel, new AtomicReference<>(new Measurements(90, 0, 1)));
             }
             children.add(new EcgChannel(id + "/ECG", states.get(id + "/ECG")));
             children.add(new PpgChannel(id + "/PPG", states.get(id + "/PPG")));
             children.add(new EegChannel(id + "/EEG", states.get(id + "/EEG")));
             children.add(new MonitorDevice(id + "/Monitor", states.get(id + "/Monitor")));
+            children.add(new OxygenSensor(id + "/Oxygen", states.get(id + "/Oxygen")));
             patients.put(id, new Patient(id, children));
         }
         var hospital = new Hospital("Teaching hospital", List.of(new Ward("Signals ward", new ArrayList<>(patients.values()))));

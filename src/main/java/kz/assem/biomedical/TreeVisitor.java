@@ -11,5 +11,6 @@ public abstract class TreeVisitor<R> implements Visitor<R> {
     public R visit(PpgChannel node) { return leaf("PPG", node); }
     public R visit(EegChannel node) { return leaf("EEG", node); }
     public R visit(MonitorDevice node) { return leaf("Monitor", node); }
+    public R visit(OxygenSensor node) { return leaf("OxygenSensor", node); }
 }
 

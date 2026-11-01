@@ -8,5 +8,6 @@ public interface Visitor<R> {
     R visit(PpgChannel node);
     R visit(EegChannel node);
     R visit(MonitorDevice node);
+    R visit(OxygenSensor node);
 }
 
