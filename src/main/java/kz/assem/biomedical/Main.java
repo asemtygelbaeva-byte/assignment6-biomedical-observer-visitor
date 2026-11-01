@@ -35,6 +35,7 @@ public final class Main {
         System.out.println("Filter window starts at 16; final P1/ECG window=" + app.filter().result("P1/ECG").windowSize());
         System.out.println("Latest patient inspection: " + app.log().lastReport());
         System.out.println("Tree latency sum: " + app.hospital().accept(new LatencyVisitor()));
+        System.out.println("Mean signal quality: " + app.hospital().accept(new QualityVisitor()).average());
         var statistics = new AlarmStatisticsVisitor();
         app.hospital().accept(statistics);
         System.out.println("Tree alarm total=" + statistics.alarms() + " leaves=" + statistics.leaves());
